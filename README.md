@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 - Starter
 
-Link to my Github Page: https://newtonlc.github.io/Lab2_Starter/
+Link to my Github Page: https://newtonlc.github.io/sp24-cse110-lab3/
