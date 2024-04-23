@@ -18,7 +18,7 @@
       </div>
       <h2>Today's Agenda</h2>
       <nav>
-        <ol type="navbar">
+        <ol class="navbar">
           <li><a href="#attendance">Attendance</a></li>
           <li><a href="#brainstorm">Brainstorming</a></li>
           <li><a href="#document">Documentation</a></li>
@@ -87,13 +87,13 @@
         </details>
 
       <h3>Unfinished business from last meeting:</h3>
-      <p>Larry: I was trying to show you my new pet bunny, but my power went out!!!</p>
+      <p>Larry: I was trying to show you my new pet bunny, but my power went out!!!</p><br>
       <img 
         src="https://media.istockphoto.com/id/1068071566/photo/cute-white-bunny-rabbit-looking-at-you.jpg?s=612x612&w=0&k=20&c=JLoQVXum256YhYLsDxMnadyp2_jMuLBAs9AjNgQ6JDo="
         title="Strawberry the bunny"
         height="100"
         width="200"
-      />
+      /><br>
       <p>AWWWW OMG</p>
 
       <h3>Notes for next meeting:</h3>
@@ -119,6 +119,12 @@
 
     <footer>
       <h1 id="footer">This is the footer</h1>
+      <ol class="navbar">
+        <li><a href="#header">Header</a></li>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#brainstorm">Brainstorming</a></li>
+        <li><a href="#document">Documentation</a></li>
+      </ol>
       <form>
         <textarea rows="3" cols="30">
           Newton says hi.
@@ -139,7 +145,8 @@
           <option value="B">B</option>
           <option value="C">C</option>
         </select>
-        <button type="button" onclick="alert('Nothing Happened!')">Click Me!</button>
+        <button type="nothing" onclick="alert('Nothing Happened!')">Click Me!</button>
+        <button type="something" onclick="alert('Something Happened!')">No, Click Me!</button>
       </form>
     </footer>
   </body>

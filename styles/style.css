@@ -5,6 +5,19 @@
     --heading-color-2: magenta;
 }
 
+#header{
+    font-size: 48px;
+
+    /*Included 3rd party font*/
+    font-family: "Jacquard 12 Charted", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    font-size: 24px;
+}
+
 /*Change properties of the body of the site.*/
 body{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Milky_Way_Galaxy.jpg/2048px-Milky_Way_Galaxy.jpg);
@@ -16,7 +29,7 @@ body{
 
 /*Change properties of paragraph texts*/
 p{
-    color: color-mix(in srgb, pink, magenta);
+    color: color-mix(in srgb, red, magenta);
 }
 em{
     text-decoration: underline;
@@ -24,11 +37,7 @@ em{
 
 /*Change properties of header texts*/
 h1{
-    /*Included 3rd party font*/
-    font-family: "Jacquard 12 Charted", system-ui;
-    font-weight: 400;
-    font-style: normal;
-
+    font-size: 40px;
     color: var(--heading-color-1, rgb(0,0,0));
     background-color: white;
     width: 50vw;
@@ -42,6 +51,7 @@ h1{
     top: 2vh;
 }
 h2{
+    font-size: 32px;
     color: var(--heading-color-2, black);
     background-color: black;
     display: inline-block;
@@ -79,6 +89,11 @@ summary{
 a{
     color: lightblue;
     margin: auto;
+
+    &:hover{
+        color: yellow;
+        font-size: 28px;
+    }
 }
 
 /*Button and link HOVER properties*/
@@ -86,10 +101,9 @@ button:hover {
     background-color: yellow;
     transform: scale(1.1);
 }
-
-a:hover {
-    color: yellow;
-    font-size: 18px;
+button[type="something"]:hover{
+    background-color: rgb(255, 136, 0);
+    transform: scale(1.1);
 }
 
 /*Button ACTIVE(PRESSED) properties*/
@@ -97,9 +111,13 @@ button:active{
     background-color: red;
     transform: scale(1);
 }
+button[type="something"]:active{
+    background-color: rgb(149, 0, 255);
+    transform: scale(1);
+}
 
 /*Flexbox layout for the nav bar(specifically the ordered list)*/
-nav ol{
+.navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -115,6 +133,25 @@ main ol{
     gap: 5px;
     justify-items: center;
     text-align: center;
+}
+
+footer > .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h2 ~ p{
+    display: inline-block;
+    background-color: rgb(0, 24, 48);
+}
+
+ul + p{
+    color: yellow;
+}
+
+h1:has(+ ul){
+    color: red;
 }
 
 /*Media query*/
